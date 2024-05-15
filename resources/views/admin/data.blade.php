@@ -35,6 +35,9 @@
                                     <th scope="col" class="px-6 py-3">
                                         Persetujuan
                                     </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Aksi Persetujuan
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -64,6 +67,24 @@
                                                 <span>D3 Teknik Listrik</span>
                                             @elseif ($item->prodi == 'rpl')
                                                 <span>D4 Rekayasa Perangkat Lunak</span>
+                                            @endif
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            @if ($item->status == 'menunggu')
+                                                <span
+                                                    class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                                    Menunggu
+                                                </span>
+                                            @elseif ($item->status == 'diterima')
+                                                <span
+                                                    class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                                    Diterima
+                                                </span>
+                                            @elseif ($item->status == 'ditolak')
+                                                <span
+                                                    class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                                                    Ditolak
+                                                </span>
                                             @endif
                                         </td>
                                         <td class="px-6 py-4">
