@@ -21,11 +21,12 @@ class AdminController extends Controller
     }
     public function pendaftaran()
     {
-        $mahasiswa = DB::table('mahasiswa')->get();
+        // $mahasiswa = DB::table('mahasiswa')->get();
+        $mahasiswa = MahasiswaModel::where('status', 'diterima')->get();
 
         return view('admin.pendaftaran', ['mahasiswa' => $mahasiswa]);
     }
-    
+
     public function updateStatus(Request $request)
     {
         $mahasiswa = MahasiswaModel::where('id', $request->id)->first();
