@@ -20,7 +20,6 @@ require __DIR__ . '/auth.php';
 
 //user router
 Route::middleware(['auth', 'userMiddleware'])->group(function () {
-    Route::get('dashboard', [UserController::class, 'index'])->name('dashboard');
     Route::get('/user/mahasiswa', [MahasiswaController::class, 'index'])->name('user.mahasiswa');
     Route::post('/user/mahasiswa', [MahasiswaController::class, 'create'])->name('mahasiswa.create');
     Route::get('/user/pmb', [MahasiswaController::class, 'pmb'])->name('user.pmb');
@@ -28,8 +27,8 @@ Route::middleware(['auth', 'userMiddleware'])->group(function () {
 
 //admin routes
 Route::middleware(['auth', 'adminMiddleware'])->group(function () {
-    Route::get('/admin/dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
     Route::get('/admin/data', [AdminController::class, 'data'])->name('admin.data');
     Route::get('/admin/pendaftaran', [AdminController::class, 'pendaftaran'])->name('admin.pendaftaran');
     Route::post('/admin/status', [AdminController::class, 'updateStatus'])->name('update.status');
+    Route::post('/admin/hapus', [AdminController::class, 'DeleteById'])->name('admin.hapus');
 });
