@@ -1,4 +1,4 @@
-<h1>TUGAS PRAKTIKUM PEMROGRAMAN BERBASIS FRAMEWORK</h1>
+<h1 align="center">TUGAS PRAKTIKUM PEMROGRAMAN BERBASIS FRAMEWORK</h1>
 <h2>Dosen Pengampu : Prih Diantono Abda’u, S.Kom., M.Kom</h2>
 <h2>Nama Projek : Pendaftaran Mahasiswa Baru</h2>
 <h2>Anggota Kelompok 1 : </h2>
