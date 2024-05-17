@@ -20,4 +20,9 @@ class MahasiswaModel extends Model
         'prodi',
         'status',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
