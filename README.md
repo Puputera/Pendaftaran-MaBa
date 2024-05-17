@@ -1,4 +1,4 @@
-<h1>TUGAS PRAKTIKUM PEMPROGRAMAN BERBASIS FRAMEWORK</h1>
+<h1>TUGAS PRAKTIKUM PEMROGRAMAN BERBASIS FRAMEWORK</h1>
 <h2>Dosen Pengampu : Prih Diantono Abda’u, S.Kom., M.Kom</h2>
 <h2>Anggota Kelompok 1 : </h2>
 <li>Maria Ine Febrianti (220102013)</li>
