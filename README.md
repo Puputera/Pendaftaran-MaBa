@@ -1,7 +1,9 @@
 <h1>TUGAS PRAKTIKUM PEMPROGRAMAN BERBASIS FRAMEWORK</h1>
 <h2>Dosen Pengampu : Prih Diantono Abda’u, S.Kom., M.Kom</h2>
 <h2>Anggota Kelompok</h2>
-
+<li>Maria Ine Febrianti (220102013)</li>
+<li>Puput Era Prima (220302019)</li>
+<li>Sinthia Dwi Yolandasari (220102023)</li>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
