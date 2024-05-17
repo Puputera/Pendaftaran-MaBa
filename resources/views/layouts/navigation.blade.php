@@ -5,17 +5,13 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ Auth::user()->usertype == 'admin' ? route('admin.dashboard') : route('dashboard') }}">
+                    <a href="{{ Auth::user()->usertype == 'admin' ? route('admin.data') : route('admin.data') }}">
                         <x-application-logo />
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="Auth::user()->usertype == 'admin' ? route('admin.dashboard') : route('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-
                     {{-- Admin Link --}}
                     @if (Auth::user()->usertype == 'admin')
                         <x-nav-link href="{{ route('admin.data') }}" :active="request()->routeIs('admin.data')">
@@ -27,7 +23,7 @@
                         </x-nav-link>
                     @endif
 
-                    {{-- Admin Link --}}
+                    {{-- User Link --}}
                     @if (Auth::user()->usertype == 'user')
                         <x-nav-link href="{{ route('user.mahasiswa') }}" :active="request()->routeIs('user.mahasiswa')">
                             {{ __('Formulir Pendaftaran') }}
@@ -96,12 +92,6 @@
 
     <!-- Responsive Navigation Menu -->
     <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
-        <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                {{ __('Dashboard') }}
-            </x-responsive-nav-link>
-        </div>
-
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
             <div class="px-4">
