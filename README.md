@@ -1,5 +1,6 @@
 <h1>TUGAS PRAKTIKUM PEMROGRAMAN BERBASIS FRAMEWORK</h1>
 <h2>Dosen Pengampu : Prih Diantono Abda’u, S.Kom., M.Kom</h2>
+<h2>Nama Projek : Pendaftaran Mahasiswa Baru</h2>
 <h2>Anggota Kelompok 1 : </h2>
 <li>Maria Ine Febrianti (220102013)</li>
 <li>Muhammad Akbar Reza Saputro (220202015)</li>
@@ -7,7 +8,6 @@
 <li>Puput Era Prima (220302019)</li>
 <li>Ramli Rahmansyah (220302020)</li>
 <li>Sinthia Dwi Yolandasari (220102023)</li>
-<h2>Nama Projek : Pendaftaran Mahasiswa Baru</h2>
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
